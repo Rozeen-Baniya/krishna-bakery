@@ -1,0 +1,1003 @@
+
+@font-face {
+    font-family: 'Jaldi Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Jaldi Regular'), url('./assets/fonts/Jaldi-Regular.woff') format('woff');
+}
+    
+
+@font-face {
+    font-family: 'Jaldi Bold';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Jaldi Bold'), url('./assets/fonts/Jaldi-Bold.woff') format('woff');
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.width-config{
+    width: 80%;
+    margin: 0 auto;
+}
+
+
+.a-tag{
+    text-decoration: none;
+    color: #A87033;
+}
+
+#pages-icon{
+    position: relative;
+    cursor: pointer;
+}
+
+.dropdown{
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    background-color: #FFEBD6;
+    font-size: 1rem;
+    width: 250%;
+    padding: 10px 10px;
+    box-shadow:  0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    z-index: 9999;
+
+}
+
+.menu-dropdown{
+    display: flex;
+    gap: 5px;
+    flex-direction: column;
+    position: absolute;
+    background-color: #FFEBD6;
+    font-size: 1rem;
+    width: 50%;
+    right: 0;
+    top: 0;
+    list-style: none;
+    padding: 10px 10px;
+    box-shadow:  0 4px 8px 0 rgba(0, 0, 0, 0.2);;
+    z-index: 9999;
+}
+
+
+.menu-dropdown>li>a{
+    text-decoration: none;
+    color:#A87033;
+    font-size: 1.2rem;
+}
+
+.toggle-view{
+    display: flex;
+}
+
+.small-navlinks{
+    display: none;
+    position: relative;
+}
+
+.toggle{
+    display: block;
+}
+
+.dropdown>li>a{
+    text-decoration: none;
+    color:#A87033;
+}
+
+.flexbox{
+    display: flex;
+}
+
+.menu-bar{
+    display: none;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Jaldi Regular', sans-serif;
+    align-items: center;
+    padding: 20px 0 10px 0;
+}
+
+
+
+.logo-img{
+    width: 11rem;
+    height: auto;
+}
+
+.navlinks{
+    display: flex;
+    gap: 100px;
+    list-style: none;
+    font-weight: 600;
+}
+
+.navlink {
+    text-decoration: none;
+    color: #A87033;
+    transition: color 0.3s ease;
+    font-size: 20px;
+}
+
+.hero{
+    background-color: #FFEBD6 ;
+    padding: 100px 0;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo-image{
+    width: 20rem;
+    height: auto;
+    margin-left: 80px;
+}
+
+.hero-image{
+    width: 38rem;
+}
+
+.hero-image img{
+    width: 100%;
+    height: auto;
+}
+
+.hero-content{
+    padding-left: 80px;
+}
+.hero-content h1{
+    font-family: 'Jaldi Bold', sans-serif;
+    font-size: 6rem;
+    color: #A87033;
+}
+
+.hero-content .motto2{
+    font-family: 'Jaldi Bold', sans-serif;
+    font-size: 50px;
+    color: #A87033;
+    margin-top: 20px;
+}
+
+.hero-content .motto{
+    font-family: 'Jaldi', sans-serif;
+    font-weight: 550;
+    font-size: 25px;
+    margin-bottom: 20px;
+    color: #A87033;
+}
+
+
+
+
+.hero-content button{
+    background-color: #A87033;
+    color: white;
+    padding: 20px 50px;
+    display: flex;
+    align-items: center;
+    border: none;
+    border-radius: 50px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+    margin-left: 25px;
+}
+
+.products h1{
+    padding: 50px 0;
+    text-align: center;
+    font-family: 'Jaldi Bold', sans-serif;
+    color: #A87033;
+    font-size: 50px;
+}
+
+.images-flexbox{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.img:hover{
+    scale: 1.05;
+    transition: all 0.5s ease-in-out;
+}
+
+.img{
+    position: relative;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    width: 100%;
+    height: 70%;
+    border-radius: 10px;
+}
+
+.img1{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.img2{
+    width: 20%;
+    position: absolute;
+    bottom: -25px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+
+.p-name{
+    width: 100%;
+    text-align: center;
+    font-family: 'Jaldi Regular', sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    color: #A87033;
+    padding-top: 50px;
+}
+
+.description-flexbox{
+
+    display: flex;
+    gap: 30px;
+    margin-top: 40px;
+}
+
+
+
+.krishna-pauroti{
+    height: 600px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.description{
+    background-color: #FFEBD6;
+    border-radius: 12px;
+    width: 100%;
+    padding: 20px 10px 0px 70px;
+}
+
+.section3-logo{
+    width: 400px;
+    height: auto;
+}
+
+.icons{
+    display: flex;
+    gap: 18px;
+    margin-top: 20px;
+    padding-left: 25px;
+}
+
+.info{
+    font-size: 21px;
+    line-height: 2.3rem;
+    padding-left: 25px;
+    margin: 20px 0;
+    font-family: 'Jaldi Regular', sans-serif;
+    color: #A87033;
+}
+
+.title34{
+    margin: 20px 0;
+    padding-left: 25px;
+    font-size: 30px;
+    font-family: 'Jaldi Bold';
+    color: #A87033;
+}
+
+.title35{
+    padding-left: 25px;
+    font-size: 22px;
+    color: #A87033;
+    font-family: 'Jaldi Bold';
+}
+
+.subtitle2{
+    font-size: 22px;
+    padding-left: 70px;
+    font-family: 'Jaldi Regular';
+    font-weight: 100;
+}
+
+
+.title32{
+    font-size: 50px;
+    font-family: 'Jaldi Bold';
+    color: #A87033;
+    text-align: center;
+    margin-top: 100px;
+}
+
+
+.subtitle3{
+    width: 54%;
+    margin: 0 auto;
+    font-size: 22px;
+    font-family: 'Jaldi regular';
+    text-align: center;
+    color: #A87033;
+}
+
+.subtitle3 span{
+    font-family: 'Jaldi Bold';
+}
+
+
+.specials-flexbox{
+    gap: 20px;
+}
+
+.specials-container{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-top: 40px;
+   
+}
+
+.specials-subcontainer{
+    background-color: #FFEBD6;
+    padding: 20px 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+     border-radius: 9px;
+}
+
+.specials-image{
+    width: 100%;
+    height: 20rem;
+    object-fit: cover;
+    margin-top: 20px;
+    border-radius: 12px;
+}
+
+.title-s1{
+    font-size: 1.1rem;
+    color: #A87033;
+    font-family: 'Jaldi Bold';
+}
+
+
+.p-1{
+    font-size: 1rem;
+    color: #A87033;
+    font-family: 'Jaldi Regular';
+}
+
+.fresh-section{
+    margin-top: 90px;
+    display: flex;
+    background-color: #FFEBD6;
+    justify-content: space-between;
+    overflow: hidden;
+}
+
+.imageleftcontainer > img {
+    width: 20rem;
+}
+
+
+.imagerightcontainer > img {
+    width: 30rem;
+}
+
+.imageleftcontainer,.imagerightcontainer{
+    align-self: end;
+    width: 30rem;
+}
+
+.fresh-desc-box{
+    align-self: center;
+}
+
+.fresh-title{
+    font-family: "Jaldi Bold";
+    color: #A87033;
+     font-size: 3rem;
+     width: 70%;
+     margin: 0 auto;
+     text-align: center;
+}
+
+.fresh-description{
+    font-family: 'Jaldi Regular';
+    text-align: center;
+    font-size: 1.26rem;
+    padding-top: 40px;
+    color: #A87033;
+}
+
+.popular{
+    margin-top: 90px;
+}
+
+.popular-title{
+    font-size: 3rem;
+    text-align: center;
+    font-family: 'Jaldi Bold';
+    color: #A87033;
+    padding-bottom: 90px;
+    
+}
+
+.right-side{
+    width: 35%;
+}
+
+.footer-subtitle{
+    padding-top: 70px;
+    padding-bottom: 20px;
+    text-align: center;
+    font-family: 'Jaldi Regular';
+    color: #A87033;
+}
+
+.subtitle4{
+    font-size: 1.3rem;
+    color: #A87033;
+    font-family: 'Jaldi Regular';
+}
+
+footer{
+    background-color: #FFEBD6;
+    padding: 100px 0 0 0;
+}
+
+.footer{
+    justify-content: space-between;
+
+}
+
+
+.footer-header{
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #A87033;
+    font-family: 'Jaldi Bold';
+}
+
+.footer-links{
+    color: #A87033;
+    font-family: 'Jaldi';
+    margin-left: 30px;
+    margin-top: 8px;
+    font-weight: 400;
+}
+
+.leftside-flex-container{
+    width: 65%;
+    justify-content: space-between;
+    padding-left: 70px;
+}
+
+.footer-image{
+    width: 20rem;
+    height: auto;
+
+}
+
+
+.contacts-footer{
+    list-style-type: none;
+}
+
+.contact-hyperlink{
+    color: #A87033;
+    font-family: 'Jaldi';
+    margin-left: 0px;
+    margin-top: 8px;
+    font-weight: 400;
+    display: flex;
+}
+
+.popular-products-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+.popular-image{
+    width: 200px;
+    height: 200px; 
+    aspect-ratio: 1;
+}
+
+.popular-image>img{
+    width: 100%;
+    aspect-ratio: 1;
+    object-fit: contain;
+}
+
+.croissants1{
+    object-fit: contain;
+}
+
+
+.popular-product>button{
+    background-color: #A87033;
+    padding: 5px 20px;
+    color: white;
+    font-family: 'Jaldi Regular';
+    font-size: 1.2rem;
+    border-radius: 9999px;
+    border: none;
+    width: max-content;
+}
+
+.popular-product{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+    background-color: #FFEBD6;
+    width: max-content;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.popular-texts{
+    text-align: center;
+}
+
+.popular-product>div>h3{
+    color: #A87033;
+    font-family: 'Jaldi Bold';
+}
+
+.heading-products{
+    background-color: #FFEBD6;
+    height: 300px;
+}
+
+.popular-page{
+    padding-top: 210px;
+}
+
+.occasion{
+    margin: 100px 0px;
+    background-color: #FFEBD6;
+    position: relative;
+    
+}
+
+.title43{
+    position: absolute;
+    top: -25px;
+    width: max-content;
+    left: 50%;
+    transform: translate(-50%);
+    background-color: #A87033;
+    padding: 10px 20px;
+    border-radius: 9999px;
+    font-size: 1.2rem;
+    font-family: 'Jaldi Bold';
+    color: white;
+}
+
+.occasion-products-container{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    justify-content: center;
+    align-items: center;
+    padding: 100px 100px;
+
+}
+
+
+.occasion-image{
+    width: 200px;
+    height: 200px; 
+    aspect-ratio: 1;
+}
+
+.occasion-image>img{
+    width: 100%;
+    aspect-ratio: 1;
+    object-fit: contain;
+}
+
+.croissants1{
+    object-fit: contain;
+}
+
+
+.occasion-product>button{
+    background-color: #A87033;
+    padding: 5px 20px;
+    color: white;
+    font-family: 'Jaldi Regular';
+    font-size: 1.2rem;
+    border-radius: 9999px;
+    border: none;
+    width: max-content;
+}
+
+.occasion-product{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+    background-color: #FFCD97;
+    width: max-content;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 12px;
+}
+
+.occasion-texts{
+    text-align: center;
+}
+
+.occasion-product>div>h3{
+    color: #A87033;
+    font-family: 'Jaldi Bold';
+}
+
+
+.occasion-products{
+    margin-top: 340px;
+}
+
+.headings1{
+    display: flex;
+    justify-content: center;
+    background-color: #FFEBD6;
+    padding: 50px 0;
+    border-radius: 12px;
+    height: 400px;
+    margin-bottom: 200px;
+}
+
+.heading-1, .heading-3{
+    width: 25%;
+}
+
+.heading-2{
+    width: 50%;
+    position: relative;
+}
+
+.heading-central{
+    text-align: center;
+    width: 100%;
+    text-align: center;
+    border: 4px solid white;
+    border-radius: 12px;
+    background-color: #FFEBD6;
+    padding: 20px 10px;
+}
+
+.heading-page{
+    margin-bottom: 300px;
+}
+
+
+.heading-1>img, .heading-3>img{
+    width: 80%;
+}
+
+
+.page-title {
+    font-size: 3rem;
+    text-align: center;
+    font-family: 'Jaldi Bold';
+    color: #A87033;
+    padding-top: 90px;
+}
+
+.quote1 , .quote2{
+    width: 3rem;
+    height: 3rem;
+}
+
+.quote1{
+    rotate: 180deg;
+}
+.quote2{
+    align-self: flex-end;
+}
+
+.subtitle-nop2{
+    display: flex;
+    padding: 0 100px;
+}
+
+.idk-what-to-name{
+    height: 5px;
+    background-color: #A87033;
+    margin: 100px auto;
+}
+
+.h3{
+    padding: 20px 0;
+}
+
+.contact-us{
+    display: flex;
+    justify-items: center;
+}
+
+.left-parent{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.input-fields>form{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    padding-top: 30px;
+}
+
+.icons-handle{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px;
+}
+
+.icon-box{
+    width: 100px;
+}
+
+.image-handle{
+    padding: 50px;
+    background-color: #FFEBD6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+    gap: 20px;
+}
+
+.maps{
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+.maps>iframe{
+    border-radius: 12px;
+    width: 100%;
+}
+
+.right-parent{
+    display: flex;
+    flex-direction: column;
+    padding: 0 30px;
+    width: 100%;
+    height: 100%;
+}
+
+.text-box-parent{
+    text-align: center;
+}
+
+.input-fields>form>input{
+    padding: 20px;
+    font-size: medium;
+    background-color: #FFEBD6;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    color: #A87033;
+}
+.input-fields>form>textarea{
+    padding: 15px;
+    background-color: #FFEBD6;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    height: 250px;
+    color: #A87033;
+}
+
+.input-fields>form>label{
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-family: 'Jaldi Bold';
+    color: #A87033;
+    font-size: large;
+}
+
+.input-fields{
+    height: 100%;
+}
+
+.text-box>h3{
+    font-family: "Jaldi Bold";
+    color: #A87033;
+    text-align: center;
+}
+.text-box>p{
+    font-family: "Jaldi Regular";
+    color: black;
+    text-align: center;
+}
+
+.hero-btn{
+    padding: 15px;
+    margin-top: 20px;
+    border: none;
+    background-color: #A87033;
+    font-size: large;
+    border-radius: 12px;
+    color: white;
+    font-family: 'Jaldii Regular';
+}
+
+
+.testimonials{
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-bottom: 150px;
+    gap: 50px;
+}
+
+
+.quote{
+    width: 5rem;
+}
+
+
+.testi{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+        position: relative;
+        border-radius: 12px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    background-color: #FFEBD6;
+    padding: 40px 40px 90px 40px;
+}
+
+.information{
+    position: absolute;
+    bottom: -5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.circle-user{
+    height: 50px;
+    width: 50px;
+    border-radius: 9999px;
+    background-color: gray;
+}
+
+.subtitle-testi{
+    padding: 0;
+    text-align: center;
+    font-size: larger;
+}
+
+
+.stars{
+    display: flex;
+    gap: 10px;
+    padding-top: 60px;
+}
+
+.user-name{
+    padding: 0;
+    padding-top: 30px;
+}
+
+.flex-boxes {
+  display: flex;
+  flex-wrap: wrap;        /* Allow wrapping */
+  gap: 20px;              /* Space between boxes (optional) */
+  padding-bottom: 20px;
+  justify-content: center;
+}
+
+.box {
+  flex: 0 0 30%;          /* 3 per row: 30% + gap = ~100% */
+  min-width: 200px;       /* Prevents too small on narrow screens */
+  background: #FFEBD6;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+
+.services-head{
+    margin-bottom: 0;
+}
+
+.custom{
+    padding: 0;
+    text-align: start;
+    font-size: large;
+}
+
+.desc{
+    font-size: medium;
+    font-family: 'Jaldi';
+    color: #A87033;
+    margin-top: 7px;
+}
+
+footer{
+    margin-top: 50px;
+}
+
+.main-services{
+    margin-top: -100px;
+}
+
+.right-box{
+    width: 100%;
+}
+.left-box{
+    width: 40%;
+}
+
+.secondsect{
+    background-color: #FFEBD6;
+    margin-top: 50px;
+    border-radius: 12px;
+}
+
+.paraaa{
+    margin-top: 0;
+}
+
+.subtit{
+    padding: 0;
+    width: 90%;
+}
+
+.text-containerr{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    align-items: center;
+    padding: 0 100px;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.purposes-cont{
+    gap: 50px;
+    margin-top: 40px;
+}
+
+.purpose-list{
+    background-color: #FFEBD6;
+    padding: 40px;
+    border-radius: 12px;
+}
+
+.purpose-list>ul>li{
+    color: #A87033;
+    font-size: larger;
+    font-family: 'Jaldi';
+    margin: 10px 0;
+    line-height: 1.7rem;
+}
