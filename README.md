@@ -9,7 +9,7 @@ Welcome to the official website for **Krishna Bakery**, a cozy and modern bakery
 
 ## 📸 Preview
 
-![Website Screenshot](https://rozeen-baniya.github.io/krishna-bakery/assets/preview.jpg) <!-- Update this with a real screenshot if available -->
+![Website Screenshot](https://rozeen-baniya.github.io/krishna-bakery/assets/home_page.png) <!-- Update this with a real screenshot if available -->
 
 ---
 
